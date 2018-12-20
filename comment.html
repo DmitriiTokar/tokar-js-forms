@@ -20,10 +20,12 @@
 				</div>
 			</div>
 			<div class="comment-add-block__right">
-				<h6 class="comment-add-block__right-title">Егор Казаков</h6>
-				<div class="notify notify--error">Комментарий не может быть пустым</div>
-				<textarea class="textarea textarea--comment-add" name="add_comment" placeholder="Присоединиться к обсуждению..."></textarea>
-				<a class="button" href="#">Опубликовать</a>
+				<form id="formComment" action="success.html">
+					<h6 class="comment-add-block__right-title">Егор Казаков</h6>
+					<div id="commentError" class="notify notify--error hidden">Комментарий не может быть пустым</div>
+					<textarea id="commentText" class="textarea textarea--comment-add" name="add_comment" placeholder="Присоединиться к обсуждению..."></textarea>
+					<input id="button" class="button" type="submit" value="Опубликовать">
+				</form>
 			</div>
 		</div>
 		<p>
