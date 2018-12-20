@@ -1,3 +1,5 @@
+@import "custom.css";
+
 * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
