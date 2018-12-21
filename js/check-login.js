@@ -60,7 +60,7 @@ $(document).ready(function() {
 			if (valueLogin == 'mail@mail.com' && valuePassword == '123') {
 				$('#login-form').unbind('submit').submit();
 			} else if (valueLogin != '' && valuePassword != '') {
-				_errorLoginPassword.removeClass();
+				_errorLoginPassword.removeClass('hidden');
 			}
 		}
 
