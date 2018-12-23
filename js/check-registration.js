@@ -19,7 +19,9 @@ $(document).ready(function() {
 			_loginForm.on('submit', function (e) {
 				_checkLogin(e);
 				_checkPassword(e);
+				_submitForm(e);
 			})
+
 		}
 
 		var _checkLogin = function (e) {
@@ -52,6 +54,16 @@ $(document).ready(function() {
 			} else {
 				_errorEmptyPassword.addClass('hidden');
 			}
+		}
+
+		var _submitForm = function (e) {
+			e.preventDefault();
+			var valueLogin = _login.val().trim();
+			var valuePassword = _password.val().trim();
+			if ((valueLogin != 'mail@mail.com' && valueLogin != '') && valuePassword != '') {
+				$('#login-form').unbind('submit').submit();
+			}
+
 		}
 
 		return {
